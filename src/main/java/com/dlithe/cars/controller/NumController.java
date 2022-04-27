@@ -1,26 +1,20 @@
 package com.dlithe.cars.controller;
 
-import com.dlithe.cars.service.TestService;
+import com.dlithe.cars.service.NumService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class TestController {
+public class NumController {
 
     @Autowired
-    public TestService testService;
+    public NumService numService;
 
-
-    @GetMapping("fetch-car-details/{carName}")
-    public String detail(@PathVariable String carName) {
-        return testService.fetchCarDetails(carName);
-
-
+    @GetMapping("total/{numOne}/{numTwo}")
+    public int mySecoundMethod(@PathVariable int numOne, @PathVariable int numTwo) {
+        return numService.addingTotal(numOne/numTwo);
     }
 
 }
-
-
-
