@@ -1,5 +1,6 @@
 package com.dlithe.cars.serviceImpl;
 
+import com.dlithe.cars.dto.CustomerDetailsRequest;
 import com.dlithe.cars.service.TestService;
 import org.springframework.stereotype.Service;
 
@@ -23,4 +24,13 @@ public class TestServiceImpl implements TestService {
             return "car name cannot find";
         }
     }
+
+    @Override
+    public String registerCustomer(CustomerDetailsRequest customerDetailsRequest) {
+
+        System.out.println(customerDetailsRequest);
+        return null;
+    }
+
+
 }
