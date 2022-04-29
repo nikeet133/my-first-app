@@ -1,5 +1,6 @@
 package com.dlithe.cars.service;
 
+import com.dlithe.cars.dto.CarDetailsResponse;
 import com.dlithe.cars.dto.CustomerDetailsRequest;
 import org.springframework.stereotype.Component;
 
@@ -10,5 +11,9 @@ public interface TestService {
 
 
     String registerCustomer(CustomerDetailsRequest customerDetailsRequest);//post mapping
+
+
+    CarDetailsResponse getCustomerDetail(int userId);
+
 
 }

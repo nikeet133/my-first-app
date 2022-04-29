@@ -8,12 +8,12 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@EqualsAndHashCode
 @ToString
-public class CustomerDetailsRequest {
+@EqualsAndHashCode
+public class CarDetailsResponse {
 
     private String name;
     private String mobileNum;
-    private String quotation;
+
 
 }
