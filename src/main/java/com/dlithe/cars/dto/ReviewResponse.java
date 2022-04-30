@@ -10,10 +10,11 @@ import lombok.ToString;
 @Setter
 @ToString
 @EqualsAndHashCode
-public class CarDetailsResponse {
+public class ReviewResponse {
 
-    private String name;
-    private String mobileNum;
+    private String reviewName;
+    private String review;
+    private String rating;
 
 
 }

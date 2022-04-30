@@ -1,6 +1,6 @@
 package com.dlithe.cars.controller;
 
-import com.dlithe.cars.dto.CarDetailsResponse;
+import com.dlithe.cars.dto.CustomerDetailsResponse;
 import com.dlithe.cars.dto.CustomerDetailsRequest;
 import com.dlithe.cars.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,8 +27,8 @@ public class TestController {
     }
 
 
-    @GetMapping("get-user-details/{userId}")
-    public CarDetailsResponse fetchUserDetails(@PathVariable int userId){
+    @GetMapping("get-user-review/{userId}")
+    public CustomerDetailsResponse fetchUserDetails(@PathVariable int userId){
         return testService.getCustomerDetail(userId);
     }
 }
